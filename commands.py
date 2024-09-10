@@ -1,0 +1,12 @@
+# Custom command mappings 
+command_map = {
+    "code": "code",  # Command to open VSCode
+    "browser": "firefox",  # Opens Firefox browser
+    "btop": "btop",  # Command to open btop
+    "whoami": "whoami",  # Command to display current user
+    "neo": "neofetch",  # Command to display system info
+    "nmtui": "nmtui",  # Command to open Network Manager
+    "htop": "htop",  # Command to open htop
+    "net.lutris.Lutris": "lutris",  # Command to open Lutris
+    "nvim": "nvim",  # Command to open Neovim
+}

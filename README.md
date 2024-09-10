@@ -1,2 +1,13 @@
-# small_raku_chatbot_for_arch-linux
-a small attachable chatbot on screen for my personal use. Can run simple commands for my arch linux environment
+# Raku - personal linux assistant
+A small attachable chatbot on screen for my personal use. Can run simple commands for my arch linux environment and do tasks / communicate / etc. 
+Keep in mind this works on arch linux! 
+
+#### raku runs on terminal as a command 
+`raku`  to activate raku without the need to separately execute it 
+*install tkinter beforehead `sudo pacman -S tk`
+
+## notes to self:
+- add task management // done
+- add more commands (possibility to run more complex combined commands?)
+- be able to compile and bundle it up as an installation executable (package)
+- introduce a better design solution to overlay Tkinter
