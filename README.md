@@ -9,5 +9,5 @@ Keep in mind this works on arch linux!
 ## notes to self:
 - add task management // done
 - add more commands (possibility to run more complex combined commands?)
-- be able to compile and bundle it up as an installation executable (package)
+- make it executable and with an shell script 
 - introduce a better design solution to overlay Tkinter

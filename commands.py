@@ -7,6 +7,5 @@ command_map = {
     "neo": "neofetch",  # Command to display system info
     "nmtui": "nmtui",  # Command to open Network Manager
     "htop": "htop",  # Command to open htop
-    "net.lutris.Lutris": "lutris",  # Command to open Lutris
     "nvim": "nvim",  # Command to open Neovim
 }

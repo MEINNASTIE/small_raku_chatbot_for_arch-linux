@@ -7,18 +7,20 @@ import subprocess
 from responses import chat_responses
 from commands import command_map
 
-# Initialize 
+# Initialize
 root = tk.Tk()
 root.title("Raku - Cute Command Chatbot")
 
+# Set window dimensions
 window_width = 500
-window_height = 400
+window_height = 700
 root.geometry(f"{window_width}x{window_height}")
 
+# Make the window float
 root.wm_attributes("-topmost", 1)
 
-# Optional: Remove window borders to make it more floating-like (comment out if not needed)
-# root.overrideredirect(True)
+# Optional: Remove window borders to make it more floating-like
+root.overrideredirect(True)
 
 # Task manager
 tasks = []
@@ -89,21 +91,24 @@ def run_command():
     entry.delete(0, tk.END)
 
 # GUI Configuration
-chat_window = tk.Text(root, bg="white", fg="#FF69B4", font=("Comic Sans MS", 10), padx=10, pady=10, wrap="word")
-chat_window.pack(expand=True, fill='both', padx=10, pady=10)
+frame = tk.Frame(root)
+frame.pack(expand=True, fill='both', padx=10, pady=10)
 
-entry = tk.Entry(root, bg="#FFE4E1", fg="#FF69B4", font=("Comic Sans MS", 12), bd=5, relief="flat")
+title_label = tk.Label(frame, text="Raku - Personal Assistant", bg="#FF69B4", fg="white", font=("Comic Sans MS", 14), pady=10)
+title_label.pack(fill='x')
+
+chat_window = tk.Text(frame, bg="white", fg="#FF69B4", font=("Comic Sans MS", 10), padx=10, pady=10, wrap="word")
+chat_window.pack(expand=True, fill='both', padx=10, pady=5)
+
+entry = tk.Entry(frame, bg="#FFE4E1", fg="#FF69B4", font=("Comic Sans MS", 12), bd=5, relief="flat")
 entry.pack(fill='x', padx=10, pady=5)
 
-run_button = tk.Button(root, text="✨ Run Command ✨", command=run_command, 
+run_button = tk.Button(frame, text="✨ Run Command ✨", command=run_command, 
                        bg="#FF69B4", fg="white", font=("Comic Sans MS", 12), 
                        bd=5, relief="raised", padx=10, pady=5)
-run_button.pack(fill='x', padx=10, pady=5)
-
-title_label = tk.Label(root, text="Raku - Personal Assistant", bg="#FF69B4", fg="white", font=("Comic Sans MS", 14), pady=10)
-title_label.pack(fill='x')
+run_button.pack(padx=10, pady=5)
 
 chat_window.tag_config("user", foreground="#FFB6C1") 
 
-# Initialize 
+# Initialize
 root.mainloop()
