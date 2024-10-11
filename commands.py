@@ -8,4 +8,6 @@ command_map = {
     "nmtui": "nmtui",  # Command to open Network Manager
     "htop": "htop",  # Command to open htop
     "nvim": "nvim",  # Command to open Neovim
+    "asciiquarium": "asciiquarium",  # Command to open ASCIIquarium
+    "ponysay": "ponysay",  # Command to display ponies
 }

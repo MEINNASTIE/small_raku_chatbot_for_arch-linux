@@ -11,3 +11,12 @@ Keep in mind this works on arch linux!
 - add more commands (possibility to run more complex combined commands?)
 - make it executable and with an shell script 
 - introduce a better design solution to overlay Tkinter
+
+commands for raku (special commands only for raku system)
+
+add 
+delete
+update
+list
+
+set up virtual environment for this project
